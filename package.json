@@ -2,19 +2,27 @@
   "name": "webapp",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build:hono": "vite build",
     "build:static": "node scripts/build-static.js",
-    "preview": "wrangler pages dev",
-    "deploy": "npm run build && wrangler pages deploy",
+    "preview": "next start",
+    "preview:hono": "wrangler pages dev",
+    "deploy:cf": "npm run build:hono && wrangler pages deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
-    "hono": "^4.13.5"
+    "hono": "^4.13.5",
+    "next": "^16.3.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@hono/vite-build": "^1.11.1",
     "@hono/vite-dev-server": "^0.26.1",
+    "@types/react": "19.2.18",
+    "typescript": "7.0.2",
     "vite": "^8.1.4",
     "wrangler": "^4.110.0"
   }
