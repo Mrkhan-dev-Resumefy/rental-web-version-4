@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  distDir: 'out',
+  // Use standard Next.js output mode so Hostinger can find the .next directory and run "next start"
   images: {
     unoptimized: true
   },
