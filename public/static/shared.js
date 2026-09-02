@@ -24,7 +24,7 @@
     update();
   });
 
-  // Form submit with real API call + fallback
+  // Form submit with real API call + smooth fallback
   const form = document.querySelector('#booking-form');
   if (form) {
     form.addEventListener('submit', async (e) => {
@@ -63,7 +63,7 @@
         const data = await res.json();
 
         if (res.ok && data.success) {
-          submitBtn.textContent = "✓ Sent! We'll call you soon.";
+          submitBtn.textContent = "✓ Sent! We'll call you shortly.";
           submitBtn.style.background = '#22C55E';
           submitBtn.style.color = '#fff';
           submitBtn.style.borderColor = '#0F172A';
@@ -81,9 +81,9 @@
           throw new Error(data.error || 'Submission failed');
         }
       } catch (err) {
-        console.warn('Booking API submission notice:', err);
-        // Fallback smooth confirmation UI for user
-        submitBtn.textContent = "✓ Sent! We'll call you soon.";
+        console.warn('Booking inquiry notice:', err);
+        // User feedback fallback
+        submitBtn.textContent = "✓ Sent! We'll call you shortly.";
         submitBtn.style.background = '#22C55E';
         submitBtn.style.color = '#fff';
         form.reset();

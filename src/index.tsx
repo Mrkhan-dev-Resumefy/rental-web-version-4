@@ -441,54 +441,42 @@ const renderHomePage = () => {
     <h2 class="section-title">Real Parties. Real Fun.</h2>
     <p class="section-subtitle">A peek at what your weekend could look like.</p>
 
-    <div class="ig-grid">
-      <a href="/assets/bounce-large-1.jpg" target="_blank">
-        <img src="/assets/bounce-large-1.jpg" alt="Large bounce house at party" />
-        <div class="overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+    <div class="gallery-grid">
+      <a href="/assets/bounce-large-1.jpg" target="_blank" class="gallery-item">
+        <img src="/assets/bounce-large-1.jpg" alt="Large bounce house party rental" loading="lazy" />
       </a>
-      <a href="/assets/bounce-large-2.jpg" target="_blank">
-        <img src="/assets/bounce-large-2.jpg" alt="Party" />
-        <div class="overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      <a href="/assets/bounce-large-2.jpg" target="_blank" class="gallery-item">
+        <img src="/assets/bounce-large-2.jpg" alt="Kids enjoying party bounce house" loading="lazy" />
       </a>
-      <a href="/assets/movie-1.jpg" target="_blank">
-        <img src="/assets/movie-1.jpg" alt="Movie night" />
-        <div class="overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      <a href="/assets/movie-1.jpg" target="_blank" class="gallery-item">
+        <img src="/assets/movie-1.jpg" alt="Outdoor movie night screen setup" loading="lazy" />
       </a>
-      <a href="/assets/popcorn-1.jpg" target="_blank">
-        <img src="/assets/popcorn-1.jpg" alt="Popcorn cart" />
-        <div class="overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      <a href="/assets/popcorn-1.jpg" target="_blank" class="gallery-item">
+        <img src="/assets/popcorn-1.jpg" alt="Fresh popcorn cart for events" loading="lazy" />
       </a>
-      <a href="/assets/party-1.jpg" target="_blank">
-        <img src="/assets/party-1.jpg" alt="Backyard party" />
-        <div class="overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      <a href="/assets/party-1.jpg" target="_blank" class="gallery-item">
+        <img src="/assets/party-1.jpg" alt="Backyard party celebration in Texas" loading="lazy" />
       </a>
-      <a href="/assets/bounce-small-1.jpg" target="_blank">
-        <img src="/assets/bounce-small-1.jpg" alt="Small bounce" />
-        <div class="overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      <a href="/assets/bounce-small-1.jpg" target="_blank" class="gallery-item">
+        <img src="/assets/bounce-small-1.jpg" alt="Small toddler bounce house" loading="lazy" />
       </a>
-      <a href="/assets/movie-2.jpg" target="_blank">
-        <img src="/assets/movie-2.jpg" alt="Movie screen" />
-        <div class="overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      <a href="/assets/movie-2.jpg" target="_blank" class="gallery-item">
+        <img src="/assets/movie-2.jpg" alt="Huge outdoor movie screen at dusk" loading="lazy" />
       </a>
-      <a href="/assets/popcorn-2.jpg" target="_blank">
-        <img src="/assets/popcorn-2.jpg" alt="Popcorn" />
-        <div class="overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      <a href="/assets/popcorn-2.jpg" target="_blank" class="gallery-item">
+        <img src="/assets/popcorn-2.jpg" alt="Freshly popped popcorn machine" loading="lazy" />
       </a>
-      <a href="/assets/bounce-large-3.jpg" target="_blank">
-        <img src="/assets/bounce-large-3.jpg" alt="Bounce" />
-        <div class="overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      <a href="/assets/bounce-large-3.jpg" target="_blank" class="gallery-item">
+        <img src="/assets/bounce-large-3.jpg" alt="Commercial grade bounce house" loading="lazy" />
       </a>
-      <a href="/assets/bounce-small-2.jpg" target="_blank">
-        <img src="/assets/bounce-small-2.jpg" alt="Toddler bounce" />
-        <div class="overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      <a href="/assets/bounce-small-2.jpg" target="_blank" class="gallery-item">
+        <img src="/assets/bounce-small-2.jpg" alt="Toddler play castle bouncer" loading="lazy" />
       </a>
-      <a href="/assets/party-2.jpg" target="_blank">
-        <img src="/assets/party-2.jpg" alt="Party rentals" />
-        <div class="overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      <a href="/assets/party-2.jpg" target="_blank" class="gallery-item">
+        <img src="/assets/party-2.jpg" alt="Party rentals setup in backyard" loading="lazy" />
       </a>
-      <a href="/assets/popcorn-3.jpg" target="_blank">
-        <img src="/assets/popcorn-3.jpg" alt="Popcorn machine" />
-        <div class="overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      <a href="/assets/popcorn-3.jpg" target="_blank" class="gallery-item">
+        <img src="/assets/popcorn-3.jpg" alt="Vintage red popcorn cart wheels" loading="lazy" />
       </a>
     </div>
     <div class="gallery-cta">
