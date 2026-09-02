@@ -52,14 +52,26 @@ A bright, playful, high-converting party rental website for **EventsRentals.io**
 
 ---
 
-## Development & Deployment
-```bash
-# Build
-npm run build
+## Hostinger / Shared Hosting Deployment
+Hostinger gives **403 Forbidden** when it cannot find an `index.html` file in your website's `public_html` root directory, or when file permissions / `.htaccess` rules block directory access.
 
-# Start with PM2
-pm2 start ecosystem.config.cjs
+This repository now includes:
+- Ready-to-serve static HTML pages: `index.html`, `bounce-houses.html`, `movie-screen.html`, `popcorn-cart.html`, `about.html`, `contact.html`.
+- Custom `.htaccess` file with Apache mod_rewrite for clean URLs (e.g. `eventsrentals.io/bounce-houses` automatically loads `bounce-houses.html`).
+- All assets (`/assets/`, `shared.css`, `shared.js`).
 
-# Check logs
-pm2 logs --nostream
-```
+### How to Deploy to Hostinger:
+1. In Hostinger hPanel, open **File Manager** → go to `public_html/`.
+2. Upload the contents of this repository directly into `public_html/`:
+   - `index.html` (Must be directly inside `public_html/`)
+   - `bounce-houses.html`
+   - `movie-screen.html`
+   - `popcorn-cart.html`
+   - `about.html`
+   - `contact.html`
+   - `.htaccess`
+   - `shared.css` and `shared.js`
+   - `assets/` folder
+3. Ensure file permissions are set to `644` for files and `755` for directories.
+4. Your website will immediately load without 403 Forbidden errors!
+
